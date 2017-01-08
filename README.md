@@ -1,0 +1,2 @@
+# amatis-wp
+Amatis Wordpress
