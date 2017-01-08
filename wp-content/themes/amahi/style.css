@@ -1,0 +1,655 @@
+/*
+ Theme Name:   Amahi Ukuleles
+ Theme URI:    
+ Description:  WordPress theme for Amahi Ukuleles
+ Author:       Ian Monk
+ Author URI:   http://ianmonkdesign.com
+ Template:     themetrust-create
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  amahi
+*/
+.blue {
+  color: #477fb2;
+}
+.dkgrey {
+  color: #333333;
+}
+small,
+.small {
+  font-size: 12px;
+}
+ul {
+  padding: 0px;
+}
+ul ul {
+  margin-left: 20px;
+}
+ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 17px;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+ol li {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+.list-none {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+.rs {
+  border: none;
+  background: none;
+  background-image: none;
+}
+strong,
+b,
+.strong,
+.bold {
+  font-weight: 700;
+  font-family: inherit;
+}
+strong,
+b {
+  font-weight: bold;
+  font-family: inherit;
+}
+.normal {
+  font-style: normal;
+}
+em,
+i,
+.em {
+  font-style: italic;
+}
+.regular,
+.reg {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+.med {
+  font-size: 1.33em;
+  line-height: 1.2em;
+}
+.large {
+  font-size: 1.75em;
+  line-height: 1.15em;
+}
+.xlarge {
+  font-size: 2.2em;
+  line-height: 1.15em;
+}
+.xxlarge {
+  font-size: 3.2em;
+  line-height: 1.15em;
+}
+.small {
+  font-size: 0.75em;
+}
+.xsmall {
+  font-size: 0.5em;
+}
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.fix {
+  position: fixed;
+}
+.show,
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.hide,
+.elements-invisible {
+  display: none;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.td-none,
+a {
+  text-decoration: none;
+}
+.td-under {
+  text-decoration: underline;
+}
+.upper {
+  text-transform: uppercase;
+}
+.caps {
+  text-transform: capitalize;
+}
+.lower {
+  text-transform: lowercase;
+}
+.tt-none {
+  text-transform: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fn {
+  float: none;
+}
+.cb {
+  clear: both;
+}
+.cl {
+  clear: left;
+}
+.cr {
+  clear: right;
+}
+.cn {
+  clear: none;
+}
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.ti {
+  text-indent: -5000px;
+}
+.ti0 {
+  text-indent: 0px;
+}
+.vtop,
+.vtop td,
+.vtop th {
+  vertical-align: top;
+}
+.vmid,
+.vmid td,
+.vmid th {
+  vertical-align: middle;
+}
+.vbtm,
+.vbtm td,
+.vbtm th {
+  vertical-align: bottom;
+}
+.w5 {
+  width: 5%;
+}
+.w10 {
+  width: 10%;
+}
+.w15 {
+  width: 15%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w33 {
+  width: 33.3%;
+}
+.w35 {
+  width: 35%;
+}
+.w40 {
+  width: 40%;
+}
+.w45 {
+  width: 45%;
+}
+.w50 {
+  width: 50%;
+}
+.w55 {
+  width: 55%;
+}
+.w60 {
+  width: 60%;
+}
+.w65 {
+  width: 65%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w85 {
+  width: 85%;
+}
+.w90 {
+  width: 90%;
+}
+.w95 {
+  width: 95%;
+}
+.w100 {
+  width: 100%;
+}
+.bs {
+  -moz-box-shadow: 0px 2px 3px #777;
+  -webkit-box-shadow: 0px 2px 3px #777;
+  box-shadow: 0px 2px 3px #777;
+}
+.p0 {
+  padding: 0px;
+}
+.p5 {
+  padding: 5px;
+}
+.p10 {
+  padding: 10px;
+}
+.p15 {
+  padding: 15px;
+}
+.p20 {
+  padding: 20px;
+}
+.p25 {
+  padding: 25px;
+}
+.p30 {
+  padding: 30px;
+}
+.p35 {
+  padding: 35px;
+}
+.p40 {
+  padding: 40px;
+}
+.p45 {
+  padding: 45px;
+}
+.p50 {
+  padding: 50px;
+}
+.auto {
+  margin: 0 auto;
+}
+.m0 {
+  margin: 0px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr25 {
+  margin-right: 25px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.ml25 {
+  margin-left: 25px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+/* Home */
+body.home .so-widget-sow-image {
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+  transition: background-color 0.5s, transform 0.5s;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+body.home .so-widget-sow-image:hover {
+  background-color: #477fb2;
+  cursor: pointer;
+}
+body.home .so-widget-sow-image:hover h2 {
+  color: #fff;
+  cursor: pointer;
+}
+body.home .so-widget-sow-image:hover a {
+  cursor: pointer;
+}
+body.home .so-widget-sow-image .sow-image-container {
+  text-align: center;
+}
+body.home .so-widget-sow-image img {
+  max-height: 380px;
+  width: auto;
+  display: inline-block !important;
+}
+body.home .so-widget-sow-image h2,
+body.home .so-widget-sow-image h3 {
+  font-size: 24px !important;
+  text-align: center;
+  color: #222;
+  padding-bottom: 15px;
+}
+body.logged-in .product-col table.variations {
+  display: block !important;
+}
+body.logged-in .product-col form.cart {
+  display: block !important;
+}
+body.logged-in #site-header .cart-icon {
+  display: inline-block;
+}
+body.logged-in .woocommerce .widget_shopping_cart {
+  display: block;
+}
+body img {
+  opacity: 1.0 !important;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  color: #242424;
+}
+body .widget h1,
+body .widget h2,
+body .widget h3,
+body .widget h4 {
+  color: #242424;
+}
+body .widget p {
+  color: #444444;
+}
+body p {
+  color: #444444;
+}
+.product-col table.variations {
+  display: none !important;
+}
+.product-col form.cart {
+  display: none !important;
+}
+.product-col h1 {
+  font-size: 32px;
+}
+.product-col .amahi-retail-price {
+  color: #333333;
+}
+.product-col .amahi-retail-price .price {
+  font-weight: 700;
+  font-family: inherit;
+}
+.product-col .amahi-prices {
+  color: #333333;
+}
+.product-col .amahi-prices .price {
+  font-weight: 700;
+  font-family: inherit;
+}
+.product-col .summary {
+  padding-top: 30px;
+  color: #333333;
+}
+.product-col .summary ul li {
+  padding-bottom: 0px;
+}
+.home-about h1,
+.home-about h2,
+.home-about h3,
+.home-about h4 {
+  color: #fff !important;
+}
+.home-about p {
+  color: #fff !important;
+  font-weight: 400;
+}
+/* Main Menu */
+#site-header.transparent {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+#site-header .cart-icon {
+  display: none;
+}
+#site-header .secondary-nav .cart-icon {
+  margin-right: 15px;
+}
+#site-header .secondary-nav .cart-icon:hover {
+  color: #fff;
+}
+#site-header .secondary-nav .cart-icon::before {
+  font-size: 24px;
+}
+#site-header .secondary-nav .cart-count {
+  width: 20px;
+  height: 20px;
+  background: #3780c3;
+}
+#site-header .secondary-nav #search-toggle-open:hover {
+  color: #fff;
+}
+#site-header .secondary-nav #search-toggle-open::before {
+  font-size: 24px;
+  margin-right: 15px;
+}
+#site-header .secondary-nav #menu-toggle-open:hover {
+  color: #fff;
+}
+#site-header .secondary-nav #menu-toggle-open::before {
+  font-size: 24px;
+}
+#site-header.sticky {
+  border-bottom: 1px solid #ddd;
+}
+/* Main content */
+#primary header.main {
+  background: #fff;
+}
+/* WooCommerce */
+.woocommerce ul.products .thumb-container {
+  height: 290px;
+}
+.woocommerce ul.products .thumb-container .product-thumb {
+  height: 290px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0px;
+  background: #f3f3f3;
+}
+.woocommerce ul.products .thumb-container .product-thumb img {
+  height: 280px;
+  width: auto;
+  max-width: none;
+  display: inline-block;
+  margin: 5px !important;
+}
+.woocommerce ul.products .product .inside {
+  background: #444;
+}
+.woocommerce ul.products .product .details {
+  text-align: left;
+}
+.woocommerce ul.products .product .details .title {
+  color: #fff;
+  font-weight: 400;
+  padding: 13px 15px 6px;
+}
+.woocommerce ul.products .product .details .price {
+  color: #aaa;
+  padding: 0px 15px 13px;
+}
+.woocommerce .sidebar .widget {
+  background: #f0f0f0;
+  margin-bottom: 20px !important;
+}
+.woocommerce .sidebar .widget .inside {
+  padding: 20px 25px;
+}
+.woocommerce .sidebar .widget h3.widget-title {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.woocommerce .sidebar .widget_nav_menu li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+.woocommerce .sidebar .widget_nav_menu li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.woocommerce .sidebar .widget_nav_menu li a:hover {
+  color: #000;
+}
+.woocommerce .before-shop {
+  display: none;
+}
+.woocommerce #product-glance .summary h1.product_title {
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 30px;
+}
+.woocommerce #product-glance .summary p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.woocommerce #product-glance .summary p.price {
+  margin-bottom: 30px;
+}
+.woocommerce #product-glance .summary form.variations_form {
+  padding-top: 30px;
+}
+.woocommerce #product-glance .product-thumb {
+  text-align: center;
+}
+.woocommerce #product-glance .product-thumb img {
+  margin: 0 auto;
+}
+.woocommerce #product-details .woocommerce-tabs {
+  display: none;
+}
+.woocommerce table.variations .label {
+  padding-right: 15px;
+}
+.woocommerce .amahi-single-product {
+  width: 70%;
+  float: left;
+}
+.woocommerce .related ul.products .thumb-container {
+  height: 183px;
+}
+.woocommerce .related ul.products .thumb-container .product-thumb img {
+  height: 150px;
+  width: auto;
+}
+.woocommerce.single-product #primary header.main {
+  display: none;
+}
+/* Sidebar menu */
+#slide-panel {
+  background-color: #477fb2 !important;
+}
+#slide-panel #slide-main-menu li {
+  margin: 0px;
+}
+#slide-panel #slide-main-menu li a {
+  font-size: 18px;
+  padding: 16px 0;
+}
+#slide-panel #slide-main-menu li#menu-item-145,
+#slide-panel #slide-main-menu li#menu-item-146 {
+  display: none !important;
+}
+.logged-in #slide-panel #slide-main-menu li#menu-item-145,
+.logged-in #slide-panel #slide-main-menu li#menu-item-146 {
+  display: block !important;
+}
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .woocommerce .amahi-single-product {
+    width: 100%;
+    float: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .woocommerce .amahi-single-product {
+    width: 100%;
+    float: none;
+  }
+  .woocommerce ul.products li.product {
+    width: 33.33% !important;
+    float: left !important;
+    clear: none !important;
+  }
+  .woocommerce .shop {
+    max-width: none !important;
+  }
+}

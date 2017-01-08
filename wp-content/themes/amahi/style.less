@@ -1,0 +1,201 @@
+/*
+ Theme Name:   Amahi Ukuleles
+ Theme URI:    
+ Description:  WordPress theme for Amahi Ukuleles
+ Author:       Ian Monk
+ Author URI:   http://ianmonkdesign.com
+ Template:     themetrust-create
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  amahi
+*/
+
+@import "globals";
+
+/* Home */
+
+body {
+	&.home {
+		.so-widget-sow-image { -webkit-transition: background-color 0.5s, -webkit-transform 0.5s; transition: background-color 0.5s, transform 0.5s; background-color: #f3f3f3; .tc;
+			&:hover { background-color: @blue; cursor: pointer; 
+				h2 { color: #fff; cursor: pointer; }
+				a { cursor: pointer; }
+			}
+			.sow-image-container { .tc; }
+			img { max-height: 380px; width: auto; display: inline-block !important; }
+			h2, h3 { font-size: 24px !important; .tc; color: #222; .pb(15px); }
+		}
+	}
+	&.logged-in {
+		.product-col {
+			table.variations { display:block !important; }
+			form.cart { display:block !important; }
+		}
+		#site-header {
+			.cart-icon { .inline-block; }
+		}
+		.woocommerce .widget_shopping_cart { .show; }
+	}
+	img { opacity: 1.0 !important; }
+	h1, h2, h3, h4 { color: #242424; }
+	.widget {
+		h1, h2, h3, h4 { color: #242424; }
+		p { color: #444444; }
+	}
+	p { color: #444444; }
+}
+
+.product-col {
+	table.variations { display:none !important; }
+	form.cart { display:none !important; }
+	h1 { .size(32px); }
+	.amahi-retail-price { .dkgrey; 
+		.price { .bold; }
+	}
+	.amahi-prices { .dkgrey;
+		.price { .bold; }
+	}
+	.summary { .pt(30px); .dkgrey;
+		ul {
+			li { .pb(0px); }
+		}
+	}
+}
+
+.home-about {
+	h1, h2, h3, h4 { color: #fff !important; }	
+	p { color: #fff !important; font-weight: 400; }
+}
+
+/* Main Menu */
+
+#site-header { 
+	&.transparent { background: rgba(0,0,0,0.5) !important; }
+	.cart-icon { .hide; }
+	.secondary-nav {
+		.cart-icon { .mr(15px); 
+			&:hover { color: #fff; }
+		}
+		.cart-icon::before { .size(24px); }
+		.cart-count { .w(20px); .h(20px); background: #3780c3; }
+		#search-toggle-open:hover { color: #fff; }
+		#search-toggle-open::before { .size(24px); .mr(15px); }
+		#menu-toggle-open:hover { color: #fff; }
+		#menu-toggle-open::before { .size(24px); }
+	}
+	&.sticky { border-bottom: 1px solid #ddd; }
+}
+
+
+/* Main content */
+
+#primary {
+	header {
+		&.main { background: #fff; }
+	}
+}
+
+
+/* WooCommerce */
+
+.woocommerce {
+	ul.products {
+		.thumb-container { .h(290px);
+			.product-thumb { .h(290px); .tc; overflow: hidden; .w(100%); margin-bottom: 0px; background: #f3f3f3;
+				img { .h(280px); .w(auto); max-width: none; .inline-block; margin: 5px !important;}
+			}
+		}
+		.product {
+			.inside { background: #444; }
+			.details { .tl;
+				.title { color: #fff; font-weight: 400; .p(13px 15px 6px); }
+				.price { color: #aaa; .p(0px 15px 13px); }
+			}
+		}
+	}
+	.sidebar {
+		.widget { background: #f0f0f0; margin-bottom: 20px !important;
+			.inside { .p(20px 25px); }
+			h3.widget-title { .upper; .size(14px); }
+		}
+		.widget_nav_menu {
+			li { .list-none; 
+				a { -webkit-transition: 0.3s; transition: 0.3s;
+					&:hover { color: #000; }
+				}
+			}
+		}
+	}
+	.before-shop { .hide; }
+	#product-glance {
+		.summary {
+			h1.product_title { .bold; .mb(30px); }
+			p { .size(16px); .lh(24px); .pb(0px); .mb(10px); 
+				&.price { .mb(30px); }
+			}
+			form.variations_form { .pt(30px); }
+		}
+		.product-thumb { .tc;
+			img { .m(0 auto); }
+		}
+	}
+	#product-details {
+		.woocommerce-tabs { .hide; }
+	}
+	table.variations {
+		.label { .pr(15px); }
+	}
+	.amahi-single-product { .w(70%); .fl; }
+	.related {
+		ul.products {
+			.thumb-container { .h(183px);
+				.product-thumb { 
+					img { .h(150px); .w(auto); }
+				}
+			}
+		}
+	}
+	&.single-product #primary header.main { .hide; }
+}
+
+
+
+/* Sidebar menu */
+
+#slide-panel { background-color: #477fb2 !important; 
+	#slide-main-menu {
+		li { .m(0px); 
+			a { .size(18px); .p(16px 0); }
+			&#menu-item-145, &#menu-item-146 { display:none !important; }
+		}
+	}
+}
+.logged-in #slide-panel #slide-main-menu li {
+	&#menu-item-145, &#menu-item-146 { display: block !important; }
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width:1024px) {
+	.woocommerce {
+		.amahi-single-product { .w(100%); .fn; }
+	}
+}
+
+@media screen and (max-width:780px) {
+	.woocommerce {
+		.amahi-single-product { .w(100%); .fn; }
+		ul.products {
+			li.product { width: 33.33% !important; float: left !important; clear: none !important; }
+			.thumb-container {
+				.product-thumb { }
+			}	
+		}
+		.shop { max-width: none !important; }
+	}
+}
+
+

@@ -1,0 +1,8 @@
+#header-search {
+    height: 0;
+    overflow: hidden;
+}
+#header-search.open {
+    height: 100%;
+    overflow: auto;
+}

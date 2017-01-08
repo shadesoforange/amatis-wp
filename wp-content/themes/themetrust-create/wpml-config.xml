@@ -1,0 +1,181 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">project</custom-type>
+		<custom-type translate="1">testimonial</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">skill</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate">_create_header_options</custom-field>
+		<custom-field action="translate">_create_header_hide</custom-field>
+		<custom-field action="translate">_create_header_transparent_bg</custom-field>
+		<custom-field action="translate">_create_header_color_scheme</custom-field>
+		<custom-field action="translate">_create_header_menu_color</custom-field>
+		<custom-field action="translate">_create_header_menu_hover_color</custom-field>
+		<custom-field action="translate">_create_header_menu_main</custom-field>
+		<custom-field action="translate">_create_header_menu_mobile</custom-field>
+		<custom-field action="translate">_create_header_menu_left</custom-field>
+		<custom-field action="translate">_create_title_options</custom-field>
+		<custom-field action="translate">_create_title_show</custom-field>
+		<custom-field action="translate">_create_title_subtitle</custom-field>
+		<custom-field action="translate">_create_title_hide_text</custom-field>
+		<custom-field action="translate">_create_title_img</custom-field>
+		<custom-field action="translate">_create_title_alignment</custom-field>
+		<custom-field action="translate">_create_title_area_height</custom-field>
+		<custom-field action="translate">_create_title_bg_img</custom-field>
+		<custom-field action="translate">_create_title_parallax</custom-field>
+		<custom-field action="translate">_create_title_color</custom-field>
+		<custom-field action="translate">_create_project_options</custom-field>
+		<custom-field action="translate">_create_project_featured_image_size</custom-field>
+		<custom-field action="translate">_create_project_lightbox_img</custom-field>
+		<custom-field action="translate">_create_project_lightbox_video</custom-field>
+		<custom-field action="translate">_create_blog_options</custom-field>
+		<custom-field action="translate">_create_blog_posts_per_page</custom-field>
+		<custom-field action="translate">_create_blog_show_excerpt</custom-field>
+		<custom-field action="translate">_create_blog_featured_img_size</custom-field>
+		<custom-field action="translate">_create_post_options</custom-field>
+		<custom-field action="translate">_create_post_featured_image_size</custom-field>
+		<custom-field action="translate">_create_post_show_featured_img</custom-field>
+		<custom-field action="translate">_create_post_full_width</custom-field>
+		<custom-field action="translate">_create_sidebar_options</custom-field>
+		<custom-field action="translate">_create_sidebar_custom_widget_area</custom-field>
+		<custom-field action="translate">_create_footer_options</custom-field>
+		<custom-field action="translate">_create_footer_hide</custom-field>
+		<custom-field action="translate">_create_footer_custom_widget_area</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="theme_mods_create">
+			<key name="create_general">
+				<key name="create_loader">
+					<key name="create_loader_enabled" />
+					<key name="create_loader_animation" />
+					<key name="create_loader_color" />
+					<key name="create_loader_bkg_color" />
+				</key>
+			</key>
+			<key name="create_layout">
+				<key name="create_site_width" />	
+			</key>
+			<key name="create_header_navigation">
+				<key name="create_logos">
+					<key name="create_logo_top" />
+					<key name="create_logo_top_width" />
+					<key name="create_logo_top_light" />
+					<key name="create_logo_top_width_light" />
+					<key name="create_logo_sticky" />
+					<key name="create_logo_sticky_width" />
+					<key name="create_logo_mobile_width" />
+					<key name="create_favicon" />
+				</key>
+				<key name="create_header">
+					<key name="create_header_top_layout" />
+					<key name="create_sticky_header" />
+					<key name="create_header_color_scheme" />
+					<key name="create_top_header_height" />
+					<key name="create_sticky_header_height" />
+					<key name="create_header_bkg_color" />
+					<key name="create_sticky_header_bkg_color" />
+					<key name="create_main_menu_color" />
+					<key name="create_main_menu_hover_color" />
+					<key name="create_sticky_main_menu_color" />
+					<key name="create_sticky_main_menu_hover_color" />
+					<key name="create_site_title_color" />
+					<key name="create_sticky_site_title_color" />
+					<key name="create_drop_down_bg_color" />
+					<key name="create_drop_down_link_color" />
+					<key name="create_drop_down_link_hover_color" />
+					<key name="create_drop_down_divider_color" />
+					<key name="create_header_accent_color" />
+				</key>
+				<key name="create_slide_panel">
+					<key name="create_enable_slide_panel" />
+					<key name="create_slide_panel_background" />
+					<key name="create_slide_panel_bg_color" />
+					<key name="create_slide_panel_text_color" />
+					<key name="create_slide_panel_link_color" />
+					<key name="create_slide_panel_link_hover_color" />
+					<key name="create_slide_panel_divider_color" />
+				</key>
+				<key name="create_header_search">
+					<key name="create_enable_header_search" />
+				</key>
+				<key name="create_header_scroll_to_top">
+					<key name="create_enable_header_scroll_to_top" />
+					<key name="create_scroll_to_top_bg_color" />
+					<key name="create_scroll_to_top_arrow_color" />
+				</key>
+				<key name="create_mobile_header">
+					<key name="create_mobile_header_breakpoint" />
+				</key>
+			</key>
+			<key name="create_page_titles">
+				<key name="create_page_title_alignment" />
+				<key name="create_page_title_text_color" />	
+				<key name="create_page_title_bg_color" />	
+			</key>
+			<key name="create_blog">
+				<key name="create_post_meta">
+					<key name="create_show_meta_date" />
+					<key name="create_show_meta_author" />
+					<key name="create_show_meta_categories" />
+					<key name="create_show_meta_comments" />
+				</key>
+				<key name="create_archives">
+					<key name="create_archive_layout" />
+					<key name="create_archive_show_excerpt" />
+				</key>
+			</key>
+			<key name="create_shop">
+				<key name="create_shop_layout_section">
+					<key name="create_shop_layout" />
+					<key name="create_shop_product_count" />
+				</key>
+				<key name="create_shop_style_section">
+					<key name="create_product_hover_color" />
+					<key name="create_shop_accent_color" />
+				</key>
+			</key>
+			<key name="create_social_sharing">
+				<key name="create_show_social_on_posts" />
+				<key name="create_show_social_on_projects" />	
+				<key name="create_show_social_on_pages" />	
+				<key name="create_show_facebook" />	
+				<key name="create_show_twitter" />	
+				<key name="create_show_google" />	
+				<key name="create_show_linkedin" />	
+				<key name="create_show_pinterest" />	
+				<key name="create_show_tumblr" />	
+			</key>
+			<key name="create_other_styles">
+				<key name="create_links">
+					<key name="create_link_color" />
+					<key name="create_link_hover_color" />
+				</key>
+				<key name="create_buttons">
+					<key name="create_button_color" />
+					<key name="create_button_text_color" />
+				</key>
+			</key>
+			<key name="create_css">
+				<key name="create_custom_css" />
+			</key>
+			<key name="create_footer">
+				<key name="create_footer_layout">
+					<key name="create_footer_columns" />
+				</key>
+				<key name="create_footer_style">
+					<key name="create_footer_bg_color" />
+					<key name="create_footer_widget_title_color" />
+					<key name="create_footer_text_color" />
+					<key name="create_footer_link_color" />
+					<key name="create_footer_link_hover_color" />
+				</key>
+				<key name="create_footer_text">
+					<key name="create_footer_left" />
+					<key name="create_footer_right" />
+				</key>
+			</key>
+		</key>
+	</admin-texts>
+</wpml-config>

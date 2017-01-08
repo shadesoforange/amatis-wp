@@ -1,0 +1,11 @@
+.demo-import {
+	max-width: 600px;
+}
+.import-spinner {
+	max-width: 220px;
+	height: auto;
+	display: block;
+	margin: 20px 0;
+}
+
+

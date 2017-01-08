@@ -1,0 +1,22 @@
+.small-cntrl{
+  width: 45%;
+  display: inline-block;
+  margin: 5% 5% 0 0;
+  padding: 0;
+  clear: none;
+}
+
+.small-cntrl .actions, .small-cntrl .upload-dropzone, .small-cntrl .library-selected {
+    font-size: 11px;
+    text-align: center !important;
+}
+
+h3.customize-control-title, .top-border {
+    margin: 12px 0 0 0;
+    padding: 12px 0 0 0;
+    border-top: thin solid #F3F3F3;
+}
+
+h3.customize-control-title {
+    font-size: 14px;
+}

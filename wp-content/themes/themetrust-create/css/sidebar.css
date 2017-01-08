@@ -1,0 +1,40 @@
+.sidebar-tt-custom{
+	position: relative;
+}
+
+.tt-delete-button{
+	height:14px;
+	width: 14px;
+	position: absolute;
+	z-index: 100;
+	top: 16px;
+	right: 35px;
+	opacity: .5;
+}
+
+.tt-delete-button:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+
+.tt-add-widget{
+	background-color: #FCFCFC;
+	border: 1px solid #DFDFDF;
+	padding:10px 15px 20px;
+	text-align: left;
+	margin: 12px 0px;
+	width: 44%;
+}
+
+#wpwrap .tt-add-widget .button{
+	margin-top:15px;
+}
+
+.tt-add-widget .input_wrap { 
+	display: block;
+	position: relative;
+}
+
+.tt-add-widget .input_wrap input{ 
+	width: 100%;
+}
