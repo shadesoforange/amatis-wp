@@ -23,13 +23,13 @@
 define('DB_NAME', 'amatis-wp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'ianmonk');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'oranges83');
+define('DB_PASSWORD', '.c*JFieQ+_vwG');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'ianmonkdev.db');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
