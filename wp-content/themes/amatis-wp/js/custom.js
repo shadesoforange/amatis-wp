@@ -1,7 +1,11 @@
 jQuery(document).ready(function( $ ) {
 	
-	if(!jQuery("body").hasClass('logged-in')) {
-		
-		
-	}	
+	$("img.size-shop_catalog").each(function(){
+		var $this = $(this);
+		if ($this.height() > 280) {
+        	$this.addClass("tall");
+    	}
+	});
+	
 });
+

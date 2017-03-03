@@ -14,7 +14,7 @@
 
 @import "globals";
 
-body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center top; font-family: 'Open Sans', serif; font-weight: 400; color: #bbb;
+body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center top; font-family: 'Lato', sans-serif; font-weight: 400; color: #bbb;
 	&.logged-in {
 		.product-col {
 			table.variations { display:block !important; }
@@ -38,8 +38,9 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 	.woocommerce .products {
 		li { 
 			a.woocommerce-LoopProduct-link { .h(400px); .tc; background: #111; border: 1px solid #333; .p(15px); .m(15px); .block; -webkit-transition: 0.5s; transition: 0.5s;
-				img { .h(300px); .w(auto); float: none; margin: 0px auto 15px !important; }
-				h3 { .size(18px); }
+				img { max-height: 300px !important; margin: 0 auto 10px; display: inline-block; }
+				h3 { .size(18px); margin-bottom: 5px; }
+				.price { }
 				&:hover { cursor: pointer !important; border: 1px solid @gold;
 					h3 { color: #fff; cursor: pointer; }
 					img { cursor: pointer; }
@@ -54,6 +55,23 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 	}
 }
 
+#wpsl-wrap {
+	padding: 0 15px;
+	.wpsl-search {
+		background: #000;
+		border-bottom: 1px solid @gold; 
+		.wpsl-search-btn-wrap {
+			margin: 30px 0 0 20px;
+			#wpsl-search-btn { background: @dkgrey; color: #fff; border: none; .radius(2px); }
+		}
+	}
+	#wpsl-stores {
+		background: #222; 
+		.wpsl-store-location strong {
+			font-family: 'Lora', serif; font-weight: 700; font-size: 1.5em; .gold; 
+		}
+	}
+}
 .product-col {
 	table.variations { display:none !important; }
 	form.cart { display:none !important; }
@@ -74,27 +92,26 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 
 /* Main Menu */
 
-#site-header.main { background: transparent url("images/gold-line.png") no-repeat center bottom; box-shadow: none; padding: 10px 0 0;
-	.nav-holder {
-		.secondary-nav { margin-top: 12px; .h(30px); 
-			a { .size(18px); line-height: 30px !important; height: 30px !important; .gold; 
-				&.cart-icon { .block; 
-					&::before { .size(18px); }
-				}	
-			}
-			span { .size(16px); line-height: 18px; height: 18px !important; background: @blue; color: #fff; }
-		}
-		.main-nav { display: block; margin-top: 69px;
-			ul.main-menu {
-				li.menu-item { .h(40px); .gold; text-transform: none; 
-					a { .gold; .lh(50px); .h(50px); cursor: pointer; .size(16px); text-transform: none; padding: 0 15px; font-weight: 400; -webkit-transition: 0.3s; transition: 0.3s;
-						&:hover { background: #222; }
-					}
-					span { .gold; text-transform: none; font-weight: 400; }
-					ul.sub-menu li a { .p(8px 15px); }
-				}
+
+#site-header.main { background: transparent url("images/gold-line.png") no-repeat center bottom; box-shadow: none; padding: 10px;
+	.main-nav { display: block; margin-top: 80px;
+		ul {
+			li { color: @gold; line-height: 36px; height: 36px !important;
+				a { color: @gold; text-transform: none; font-size: 18px; line-height: 36px !important; font-weight: 300; height: 36px !important; padding: 0 14px; }
 			}
 		}
+	}
+	.secondary-nav { background: @dkgrey; .radius(2px); line-height: 20px !important; margin-top: 12px; padding: 10px 20px 10px 10px;
+		a { font-size: 20px; line-height: 20px !important; height: 20px !important; display: inline-block; }
+		span { font-size: 20px; line-height: 20px; height: 20px; background: transparent; color: @grey; }
+		.cart-icon { color: @grey; font-size: 20px; 
+			&::before { font-size: 20px; width: 20px; height: 20px; }
+			span.cart-count { color: #000 !important; background: @gold; font-size: 12px; line-height: 15px; font-family: 'Lato', sans-serif; font-weight: bold; }
+		}
+		.search-toggle { font-size: 20px; line-height: 20px !important; height: 20px !important; margin: 0 0 0 20px; 
+			&::before { font-size: 20px; width: 20px; height: 20px; }
+		}
+		.menu-toggle { font-size: 20px; line-height: 20px !important; height: 20px !important; margin: 0 0 0 20px; }
 	}
 }
 
@@ -138,18 +155,25 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 
 .woocommerce {
 	ul.products {
-		.thumb-container { .h(290px);
-			.product-thumb { .tc; overflow: hidden; .w(100%); margin-bottom: 0px; background: #000; border: 1px solid #222; -webkit-transition: 0.5s; transition: 0.5s;
-				img { .h(280px); .w(auto); max-width: none; .inline-block; margin: 5px !important;}
+		.thumb-container { .h(290px); padding: 10px; background: #000; border: 1px solid #222; -webkit-transition: 0.5s; transition: 0.5s;
+			.product-thumb { display: table-cell; vertical-align: middle; .tc; overflow: hidden; height: 270px; margin-bottom: 0px; background: transparent; 
+				img { }
 				.overlay { .hide; }
-				&:hover { border: 1px solid @gold; }
 			}
+			&:hover { border: 1px solid @gold; }
 		}
 		.product {
 			.inside { background: #222; }
 			.details { .tl;
 				.title { color: #fff; font-weight: 400; .p(13px 15px 6px); }
 				.price { color: #aaa; .p(0px 15px 13px); }
+			}
+			img { 
+				max-height: 100% !important;
+				max-width: 100% !important;
+				height: auto !important;
+				width: auto !important; //display: inline-block; 
+				//&.tall { height: 100%; width: auto; }
 			}
 		}
 	}
@@ -199,11 +223,14 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 
 /* Sidebar menu */
 
-#slide-panel { background-color: #477fb2 !important; 
-	#slide-main-menu {
-		li { .m(0px); 
-			a { .size(18px); .p(16px 0); }
-			&#menu-item-145, &#menu-item-146 { display:none !important; }
+#slide-panel { background-color: rgba(0,0,0,0.75) !important; 
+	nav {
+		a { .size(22px); .p(16px 0); color: #fff; }
+		.menu-item-has-children {
+			ul { margin-left: 0px;
+				a { font-size: 18px; color: @grey; padding: 10px 0; }
+			}
+			&:after { margin-top: 18px; }
 		}
 	}
 }
@@ -220,16 +247,27 @@ body { background: #000 url("images/amatis-bg-noviolin.jpg") no-repeat center to
 	}
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:480px) {
+	.inline-header #site-header.main { height: 80px; 
+		#logo { height: 60px !important; 
+			img { height: 60px; width: auto; }
+		}
+		.secondary-nav { margin-top: 10px; }
+	}
+	
 	.woocommerce {
 		.amatis-single-product { .w(100%); .fn; }
 		ul.products {
-			li.product { width: 33.33% !important; float: left !important; clear: none !important; }
+			li.product {  }
 			.thumb-container {
 				.product-thumb { }
 			}	
 		}
 		.shop { max-width: none !important; }
+	}
+	
+	#primary {
+		header.main { padding: 0px 0px !important; }
 	}
 }
 

@@ -30,7 +30,7 @@ $header_class .= $header_color_scheme;
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Lora:700,7900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Lora:700,7900i" rel="stylesheet">
 	
 	<?php wp_head(); ?>
 </head>
